@@ -3,13 +3,13 @@
 using namespace std;
 
 struct AlamatDetail {
-	string desa;
-	string kota;
+	char desa [20];
+	char kota [20];
 };
 
 struct Mahasiswa {
-	string nim;
-	string nama;
+	char nim [12];
+	char nama [20];
 	AlamatDetail alamat;
 	int umur;
 };
@@ -18,15 +18,7 @@ int main() {
 
 	Mahasiswa mhs[3];
 
-	cout << "Masukkan NIM : ";
-	cin >> mhs[i].nim;
-	cout << "Masukkan Nama : ";
-	cin >> mhs[i].nama;
-	cout << "Alamat : " << endl;
-	cout << "\tMasukkan Desa : ";
-	cin >> mhs[i].alamat.desa;
-	cout << "\tMasukkan Kota : ";
-	cin >> mhs[i].alamat.kota;
-	cout << "Masukkan Umur : ";
-	cin >> mhs[i].umur;
-}
+	for (size_t i = 0; i < 3; i++)
+	{
+
+	}
