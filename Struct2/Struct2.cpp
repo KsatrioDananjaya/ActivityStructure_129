@@ -25,7 +25,7 @@ int main() {
 	cout << "Alamat : " <<endl;
 	cout << "\tMasukkan Desa : ";
 	cin >> mhs.alamat.desa;
-	cout << "\tMasukkan Kota";
+	cout << "\tMasukkan Kota : ";
 	cin >> mhs.alamat.kota;
 	cout << "Masukkan Umur : ";
 	cin >> mhs.umur;
