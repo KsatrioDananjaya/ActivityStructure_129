@@ -18,7 +18,26 @@ int main() {
 
 	Mahasiswa mhs[3];
 
-	for (size_t i = 0; i < 3; i++)
+	for (int i = 0; i < 3; i++)
 	{
-
+		cout << "Masukkan NIM : ";
+		cin.getline(mhs[i].nim, 12);
+		cout << "Masukkan Nama : ";
+		cin.getline(mhs[i].nama, 20);
+		cout << "Alamat : " << endl;
+		cout << "\tMasukkan Desa : ";
+		cin.getline(mhs[i].alamat.desa, 20);
+		cout << "\tMasukkan Kota : ";
+		cin.getline(mhs[i].alamat.kota, 20);
+		cout << "Masukkan Umur : ";
+		cin >> mhs[i].umur;
+		cin.ignore(1);
+	}
+	for (int i = 0; i < 3; i++)
+	{
+		cout << "\nNIM :" << mhs[i].nim;
+		cout << "\nNama :" << mhs[i].nama;
+		cout << "\nDesa :" << mhs[i].alamat.desa;
+		cout << "\nKota :" << mhs[i].alamat.kota;
+		cout << "\nUmur :" << mhs[i].umur;
 	}
